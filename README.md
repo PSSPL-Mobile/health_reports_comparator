@@ -8,12 +8,6 @@
 
 The **Health Report Comparator** is an intelligent application that enables users to securely upload two medical/health reports and receive a side-by-side analysis highlighting what has **changed**, **improved**, or **worsened**. Whether you're monitoring chronic conditions or reviewing regular checkups, this tool makes report comparison fast, easy, and meaningful.
 
-## 📽️ Preview
-<p align="left">
-  <img src="demo.gif" width="30%" />
-</p>
----
-
 ## 📌 Features
 
 - 🗂 **Dual Report Upload:** Upload two health reports in PDF formats.
@@ -49,3 +43,9 @@ The **Health Report Comparator** is an intelligent application that enables user
 ## 📁 Project Structure
 
 ![img.png](img.png)
+
+## 📽️ Preview
+<p align="left">
+  <img src="sample-video.gif" width="30%" />
+</p>
+---
