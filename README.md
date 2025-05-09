@@ -1,16 +1,47 @@
-# health_reports_comparator_gemini
+# 🩺 Health Report Comparator
 
-A new Flutter project.
+**AI-Powered Medical Report Comparison Tool**
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Overview
 
-A few resources to get you started if this is your first Flutter project:
+The **Health Report Comparator** is an intelligent application that enables users to securely upload two medical/health reports and receive a side-by-side analysis highlighting what has **changed**, **improved**, or **worsened**. Whether you're monitoring chronic conditions or reviewing regular checkups, this tool makes report comparison fast, easy, and meaningful.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📌 Features
+
+- 🗂 **Dual Report Upload:** Upload two health reports in PDF formats.
+- 🧠 **AI-Powered Extraction:** Use OCR and NLP to parse medical text, tables, and observations.
+- ⚖️ **Health Metric Comparison:** Detect and classify changes across a wide range of metrics:
+    - Blood pressure, cholesterol, blood sugar, BMI, diagnoses, etc.
+- 🎯 **Change Classification:**
+    - ✅ **Improvements**
+    - ⚠️ **Deteriorations**
+    - 🆕 **New Observations**
+    - ❌ **Omitted Metrics**
+- 📊 **Visualization & Summary:**
+    - Color-coded result comparison
+    - Plain-English summary of changes
+---
+
+## 👤 Target Users
+
+- Individuals tracking personal or family health over time
+- Healthcare professionals comparing patient history
+- Insurers or clinics needing objective report changes
+
+---
+
+## 🧰 Tech Stack
+
+| Layer    | Technology                   |
+|----------|------------------------------|
+| Frontend | Flutter (Android, iOS)       |
+| AI       | Gemini                       |
+---
+
+## 📁 Project Structure
+
+![img.png](img.png)
