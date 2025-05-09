@@ -113,46 +113,59 @@ class _ReportComparisonScreenState extends State<ReportComparisonScreen> {
                       ],
                     ),
                     const SizedBox(height: 32.0),
-                    SizedBox(
-                      width: double.infinity,
-                      height: 48.0,
-                      child: ElevatedButton(
-                        onPressed: () async{
-                          await _compareReports();
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue.shade700,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 8.0),
+                            child: SizedBox(
+                              height: 48.0,
+                              child: ElevatedButton(
+                                onPressed: () async{
+                                  await _compareReports();
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.blue.shade700,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                ),
+                                child: const Text(
+                                  'Compare Reports',
+                                  style: TextStyle(fontSize: 16.0, color: Colors.white),
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                        child: const Text(
-                          'Compare Reports',
-                          style: TextStyle(fontSize: 16.0, color: Colors.white),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                          child: TextButton(
+                            onPressed: () {
+                              setState(() {
+                                _filePath1 = null;
+                                _filePath2 = null;
+                                vitalList.clear();
+                                keyChanges.clear();
+                              });
+                            },
+                            child: const Text(
+                              'Clear All',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
                     const SizedBox(height: 16.0),
-                    TextButton(
-                      onPressed: () {
-                        setState(() {
-                          _filePath1 = null;
-                          _filePath2 = null;
-                          vitalList.clear();
-                          keyChanges.clear();
-                        });
-                      },
-                      child: const Text(
-                        'Clear All',
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    ),
+
                   ],
                 ),
               ),
 
               Expanded(
                   child: SingleChildScrollView(
+                    padding: const EdgeInsets.only(bottom: 36.0),
                     child: Column(
                       children: [
                         Column(
@@ -160,6 +173,7 @@ class _ReportComparisonScreenState extends State<ReportComparisonScreen> {
                             vitalModel: vital,
                           )).toList(),
                         ),
+                        const SizedBox(height: 16.0),
 
                         keyChanges.isNotEmpty? HealthSummaryCard(
                           keyChanges: keyChanges,

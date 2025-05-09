@@ -32,7 +32,7 @@ class HealthSummaryCard extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: keyChanges.map((element) => Text(
-                '* $element', style: TextStyle(
+                '🚀 $element', style: TextStyle(
                 fontSize: 14.5,
                 color: Colors.black87,
               ),
