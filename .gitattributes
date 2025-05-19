@@ -1,0 +1,6 @@
+# Ignore everything by default
+* linguist-detectable=false
+
+# Only include Dart files from lib/
+lib/** linguist-detectable=true
+lib/** linguist-language=Dart
